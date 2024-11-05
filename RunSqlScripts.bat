@@ -2,18 +2,18 @@
 SETLOCAL
 
 REM Set SQL Server details
-SET SERVER_NAME=localhost\SQLEXPRESS
-SET DATABASE_NAME=Allianz_SQL
+SET SERVER_NAME="your sql server"
+SET DATABASE_NAME="your db"
 
 REM Prompt user for SQL Server username and password
 SET /P USERNAME=Enter SQL Server username: 
 SET /P PASSWORD=Enter SQL Server password: 
 
 REM Path to your SQL scripts (no trailing backslash)
-SET SQL_PATH="C:\Users\AndresRoldan\Desktop\Andres\Allianz\sql_assignment\sql_scripts"
+SET SQL_PATH="sql path"
 
 REM Full path to sqlcmd executable (if not in PATH)
-SET SQLCMD_PATH="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\SQLCMD.EXE"
+SET SQLCMD_PATH="sqlcmd.exe path"
 
 REM Execute each SQL script in the specified order
 echo Executing data_vault_tables_creation.sql

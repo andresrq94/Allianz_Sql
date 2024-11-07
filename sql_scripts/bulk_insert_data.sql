@@ -12,7 +12,7 @@ CREATE TABLE #Staging_Customers (
 
 -- Bulk insert from CSV file
 BULK INSERT #Staging_Customers
-FROM 'C:\Users\AndresRoldan\Desktop\Andres\Allianz\python_assignment\build\dim_customer.csv'
+FROM 'customer csv path'
 WITH (
     FIELDTERMINATOR = ',',  -- Specify the column delimiter
     ROWTERMINATOR = '\n',   -- Specify the row delimiter
@@ -56,7 +56,7 @@ CREATE TABLE #Staging_Products (
 
 -- Bulk insert from CSV file
 BULK INSERT #Staging_Products
-FROM 'C:\Users\AndresRoldan\Desktop\Andres\Allianz\python_assignment\build\dim_product.csv'
+FROM 'product csv path'
 WITH (
     FIELDTERMINATOR = ',',  -- Specify the column delimiter
     ROWTERMINATOR = '\n',   -- Specify the row delimiter
@@ -98,7 +98,7 @@ CREATE TABLE #Staging_Sales (
 
 -- Bulk insert from CSV file
 BULK INSERT #Staging_Sales
-FROM 'C:\Users\AndresRoldan\Desktop\Andres\Allianz\python_assignment\build\sales.csv'
+FROM 'sales csv file'
 WITH (
     FIELDTERMINATOR = ',',  -- Specify the column delimiter
     ROWTERMINATOR = '\n',   -- Specify the row delimiter
